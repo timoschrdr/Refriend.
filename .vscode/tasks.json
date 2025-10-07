@@ -1,0 +1,94 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "🚀 Start Expo App",
+			"type": "shell",
+			"command": "npm",
+			"args": ["start"],
+			"options": {
+				"cwd": "${workspaceFolder}/refriend-app"
+			},
+			"group": "build",
+			"isBackground": true,
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "new",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "🌐 Start Expo + Open Web",
+			"type": "shell",
+			"command": "npm",
+			"args": ["start"],
+			"options": {
+				"cwd": "${workspaceFolder}/refriend-app"
+			},
+			"group": "build",
+			"isBackground": true,
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "🔄 Restart Expo (Clear Cache)",
+			"type": "shell", 
+			"command": "npm",
+			"args": ["start", "--clear"],
+			"options": {
+				"cwd": "${workspaceFolder}/refriend-app"
+			},
+			"group": "build",
+			"isBackground": true,
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "📱 Install Dependencies",
+			"type": "shell",
+			"command": "npm",
+			"args": ["install"],
+			"options": {
+				"cwd": "${workspaceFolder}/refriend-app"
+			},
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"problemMatcher": ["$eslint-stylish"]
+		},
+		{
+			"label": "🧹 Clean Install",
+			"type": "shell",
+			"command": "rm -rf node_modules package-lock.json && npm install",
+			"options": {
+				"cwd": "${workspaceFolder}/refriend-app"
+			},
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		}
+	]
+}
